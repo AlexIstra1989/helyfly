@@ -1,0 +1,31 @@
+.header {
+ background-color: $primaryColor;
+ .container {
+  padding: 0 15px;
+  @media screen and (min-width: 576px) {
+   padding: 0 35px;
+  }
+ }
+ &__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 22px;
+ }
+ &__inner {
+  display: flex;
+ }
+ &__logo {
+  margin-right: 45px;
+  @media screen and (min-width: 576px) {
+   margin-right: 36px;
+  }
+ }
+ &__phone {
+  @include text (14px, 400, 1.2, $linkColor);
+  transition: color 0.5s ease;
+  &:hover {
+   color: rgba(123, 162, 240, 0.5);
+  }
+ }
+}
