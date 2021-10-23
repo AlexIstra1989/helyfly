@@ -3,7 +3,7 @@
  background-repeat: no-repeat;
  background-position-x: 52%;
  background-size: cover;
- // max-height: calc(100vh - 60px);
+ max-height: calc(100vh - 60px);
  .container {
   @extend %container;
  }
