@@ -1,0 +1,67 @@
+.rating {
+ &__box {
+  border-top: 0.5px solid $secondaryColor;
+  border-bottom: 0.5px solid $secondaryColor;
+  padding: 14px 0; 
+  position: relative;
+  &::before {
+   position: absolute;
+   content: "";
+   display: block;
+   width: 36px;
+   height: 41px;
+   background-image: url("../images/icons/cup.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   left: 0;
+   top: 0;
+  }
+ }
+ &__text {
+  @include text(14px, 500, 1.4, $textColor);
+  text-align: center;
+ }
+ 
+}
+
+.rating-area {
+	overflow: hidden;
+	width: 215px;
+	margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 26px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px; 
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}

@@ -50,6 +50,7 @@
 
  &__list {
   max-width: 216px;
+  margin-bottom: 52px;
  }
 
  &__item {
@@ -77,7 +78,7 @@
  }
  &__item--photo::before {
   background-image: url("../images/icons/photo.svg");
-  width: 38px;
+  width: 39px;
  }
  &__item--map::before {
   background-image: url("../images/icons/location.svg");
@@ -85,16 +86,4 @@
  &__item--questions::before {
   background-image: url("../images/icons/speech.svg");
  }
- 
-
-
-
-
-
-
-
-
- 
-
-
 }
