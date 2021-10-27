@@ -1,9 +1,10 @@
 .home {
  background-image: url("../images/home-bg.jpg");
  background-repeat: no-repeat;
- background-position-x: 52%;
+ // background-position-x: 52%;
+ // background-position-y: 55%;
+ background-position: 55%;
  background-size: cover;
- max-height: calc(100vh - 60px);
  .container {
   @extend %container;
  }
@@ -11,7 +12,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 508px;
+  min-height: calc(100vh - 60px);
+  @include media (md) {
+   min-height: calc(100vh - 100px);
+  }
  }
  &__title {
   @include text(32px, 700, 1, $primaryColor);
@@ -20,6 +24,13 @@
   margin-bottom: 36px;
   span {
    color: $accentColor;
+  }
+  @include media (md) {
+   @include text (40px, 700, 1.2, $primaryColor);
+   max-width: 596px;
+  }
+  @include media (lg) {
+   max-width: 887px;
   }
  }
  &__price {
@@ -38,6 +49,9 @@
   transition: background-color 0.5s ease;
   &:hover {
    background-color: rgba(252, 155, 9, 1);
+  }
+  @include media (md) {
+   @include text(18px, 400, 1.2, $primaryColor);
   }
  }
 }

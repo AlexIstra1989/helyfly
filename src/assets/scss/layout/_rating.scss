@@ -4,6 +4,12 @@
   border-bottom: 0.5px solid $secondaryColor;
   padding: 14px 0; 
   position: relative;
+  @include media (sm) {
+   display: flex;
+   align-items: center;
+   padding: 30px 0; 
+   max-width: 570px;
+  } 
   &::before {
    position: absolute;
    content: "";
@@ -15,20 +21,34 @@
    background-position: center;
    background-size: cover;
    left: 0;
-   top: 0;
+   bottom: 20px;
+   @include media (sm) {
+    width: 32px;
+    height: 35px;
+    bottom: 35px;
+   } 
   }
  }
  &__text {
-  @include text(14px, 500, 1.4, $textColor);
-  text-align: center;
+  @include text (14px, 400, 1.4, $textColor);
+  padding-left: 48px;
+  max-width: 241px;
+  span {
+   @include text (14px, 500, 1.4, $textColor);
+  }
+  @include media (sm) {
+   @include text (18px, 400, 1.4, $textColor);
+   max-width: 290px;
+   span {
+    @include text (14px, 600, 1.4, $textColor);
+   }
+  }
  }
- 
 }
 
 .rating-area {
 	overflow: hidden;
-	width: 215px;
-	margin: 0 auto;
+	width: 175px;
 }
 .rating-area:not(:checked) > input {
 	display: none;
