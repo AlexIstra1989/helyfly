@@ -1,7 +1,7 @@
 {
   "name": "gulp-project",
   "version": "1.0.0",
-  "description": "gulp-project",
+  "descr": "gulp-project",
   "author": "it-incubator",
   "devDependencies": {
     "browser-sync": "^2.26.14",

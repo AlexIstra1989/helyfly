@@ -2,8 +2,7 @@
 @import "base/global";
 @import "abstracts/vars";
 @import "abstracts/mixins";
-@import "layout/header";
-@import "layout/home";
-@import "layout/description";
-@import "layout/rating";
-
+@import "blocks/header";
+@import "blocks/home";
+@import "blocks/descr";
+@import "blocks/rating";
