@@ -197,6 +197,12 @@
     border: 2px solid $accentColor;
    }
   }
+  &__box {
+
+  }
+  &__box-title {
+   
+  }
   &__text {
    @include text(14px, 400, 1.4, $textColor);
     opacity: 0.22;
