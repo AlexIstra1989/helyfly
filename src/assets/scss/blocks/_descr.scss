@@ -201,7 +201,7 @@
 
   }
   &__box-title {
-   
+   display: none;
   }
   &__text {
    @include text(14px, 400, 1.4, $textColor);
