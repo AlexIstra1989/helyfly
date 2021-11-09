@@ -1,0 +1,59 @@
+.gallery {
+ padding-top: 60px;
+ .container {
+  @extend %container;
+ }
+ &__title {
+  @include text (26px, 400, 1.5, $textColor);
+   margin: 0 auto 32px;
+   max-width: 170px;
+   text-align: center;
+  @include media (md) {
+   @include text (20px, 500, 1.4, $textColor);
+   max-width: 219px;
+   margin: 0 0 30px 0;
+   text-align: left;
+  }
+ }
+ &__box {
+  display: grid;
+  grid-template-columns: repeat(8, 277px); 
+  overflow-x: scroll;
+  @include media (md) {
+   grid-template-columns: repeat(2, 275px);
+   justify-content: center;
+   gap: 11px;
+   overflow: hidden;
+   margin-bottom: 45px;
+  }
+  @include media (lg) {
+   grid-template-columns: repeat(4, 275px);
+  }
+ }
+ &__link {
+  display: none;
+  @include media (md) {
+   @include text (17px, 400, 1.4, $linkColor);
+   display: block;
+   text-align: center;
+   position: relative;   
+   &::before {
+    @include pseudo;
+    @include background (url("../images/icons/arrow.svg"));
+     width: 11px;
+     height: 6px;
+     left: 35%;
+     top: 30%;
+   } 
+   &::after {
+    @include pseudo;
+    @include background (url("../images/icons/arrow.svg"));
+     width: 11px;
+     height: 6px;
+     right: 35%;
+     top: 30%;
+   } 
+  }
+ }
+}
+

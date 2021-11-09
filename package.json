@@ -27,7 +27,10 @@
     "IE 10"
   ],
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
