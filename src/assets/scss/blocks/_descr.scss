@@ -97,7 +97,6 @@
   }
   &__text {
    @include text(14px, 400, 1.4, $textColor);
-    opacity: 0.22;
     margin-bottom: 40px;
     max-width: 268px;
    @include media (sm) {

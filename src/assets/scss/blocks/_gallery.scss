@@ -14,6 +14,9 @@
    margin: 0 0 30px 0;
    text-align: left;
   }
+  @include media (lg) {
+   margin-bottom: 40px;
+  }
  }
  &__box {
   display: grid;
@@ -28,6 +31,7 @@
   }
   @include media (lg) {
    grid-template-columns: repeat(4, 275px);
+   margin-bottom: 40px;
   }
  }
  &__link {
@@ -35,6 +39,9 @@
   @include media (md) {
    @include text (17px, 400, 1.4, $linkColor);
    display: block;
+   padding-bottom: 27px;
+   border-bottom: 1px solid $secondaryColor;
+   width: 100%;
    text-align: center;
    position: relative;   
    &::before {
@@ -43,7 +50,10 @@
      width: 11px;
      height: 6px;
      left: 35%;
-     top: 30%;
+     top: 20%;
+     @include media (lg) {
+      left: 40%;
+     }
    } 
    &::after {
     @include pseudo;
@@ -51,7 +61,10 @@
      width: 11px;
      height: 6px;
      right: 35%;
-     top: 30%;
+     top: 20%;
+     @include media (lg) {
+      right: 40%;
+     }
    } 
   }
  }

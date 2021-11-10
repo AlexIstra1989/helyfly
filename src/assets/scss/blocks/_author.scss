@@ -1,4 +1,99 @@
 .author {
  background-color: $primaryColor;
- padding: 63px 0 40px;
+ padding: 63px 0 10px;
+ @include media (md) {
+  padding-top: 39px;
+ }
+ .container {
+  @extend %container;
+ }
+ &__inner {
+  @include media (md) {
+   border-bottom: 0.5px solid $secondaryColor;
+  }
+  @include media (lg) {
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: row-reverse;
+  }
+ }
+ &__profile {
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+  @include media (lg) {
+   margin-bottom: 0;
+  }
+  &::after {
+   @include pseudo;
+   @include background (url("../images/icons/like.svg"));
+   width: 31px;
+   height: 27px;
+   top: 0;
+   right: 0;
+   @include media (sm) {
+    right: 90px;
+   }
+   @include media (md) {
+    right: 170px;
+   }
+   @include media (lg) {
+    right: 0;
+   }
+  }
+  @include media (lg) {
+   padding-top: 30px;
+  }
+ }
+ &__image {
+  margin: 0 auto;
+ }
+ &__name {
+  @include text (18px, 600, 1.2, $textColor);
+  margin: 23px 0 7px;
+ }
+ &__activity {
+  @include text (14px, 400, 1.5, $textColor);
+  margin-bottom: 7px;
+ }
+ &__link {
+  @include text (14px, 400, 1.5, $linkColor);
+  max-width: 195px;
+  display: block;
+  margin: 0 auto;
+ }
+ &__info {
+  @include media (lg) {
+   max-width: 584px;
+   margin-right: 150px;
+  }
+  @include media (xl) {
+   margin-right: 220px;
+  }
+ }
+ &__info-title {
+  @include text (18px, 600, 1.4, $textColor);
+  margin-bottom: 14px;
+ }
+ &__text {
+  @include text (16px, 400, 1.5, $textColor);
+  margin-bottom: 35px;
+ p {
+  margin-bottom: 35px;
+ }
+ }
+ &__info-link {
+  @include text (16px, 400, 1.4, $linkColor);
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+  &::after {
+   @include pseudo;
+   @include background (url("../images/icons/arrow.svg"));
+   width: 11px;
+   height: 6px;
+   left: 100px;
+   top: 10px;
+  }
+ }
 }
