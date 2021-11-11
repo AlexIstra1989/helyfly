@@ -8,37 +8,65 @@
   text-align: center;
   margin: 0 auto 40px;
  }
+ &__box {
+  border-bottom: 0.5px solid $secondaryColor;
+  @include media (sm) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ }
  &__data {
   @include text (18px, 400, 1.4, $textColor);
   display: block;
   padding: 20px 0;
-  margin-bottom: 30px;
   border-top: 0.5px solid $secondaryColor;
   border-bottom: 0.5px solid $secondaryColor;
   text-align: center;
+  position: relative;
+  @include media (sm) {
+  text-align: left;
+  }
+  &::after {
+   @include pseudo;
+   @include background (url("../images/icons/calendar.svg"));
+   width: 35px;
+   height: 35px;
+   @include media (sm) {
+    left: 40%;
+    top: 25%;
+   } 
+   // @include media (md) {
+   //  left: 30%;
+   // } 
+  }
+  
  }
  &__item {
   @include text (18px, 400, 1.4, $textColor);
   &:not(:last-child) {
    margin-bottom: 10px;
   }
-  &:last-child {
+  &:nth-child(3){
    margin-bottom: 20px;
   }
  }
  &__time {
-  // @include text (18, 400, 1.4, $textColor);
+  display: block;
+  margin-top: 30px;
  }
- &__day {
+ &__day,
+ &__evening {
    @include text (18px, 600, 1.2, $textColor);
  }
-
-
-
-
-
  &__link {
-  display: block;
+  @include text (14px, 400, 1.2, $accentColor);
+  display: inline-block;
   margin-bottom: 30px;
+  padding: 16px 32px;
+  border: 2px solid $accentColor;
+  @include media (sm) {
+   margin-bottom: 0;
+  }
  }
 }
