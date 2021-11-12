@@ -7,40 +7,57 @@
   max-width: 243px;
   text-align: center;
   margin: 0 auto 40px;
+  @include media (md) {
+   margin-left: 0;
+   text-align: inherit;
+  }
+ }
+ &__inner {
+  border-top: 0.5px solid $secondaryColor;
+  @include media (lg) {
+   max-width: 770px;
+   border: 0.5px solid $secondaryColor;
+  }
  }
  &__box {
+  border-top: 0.5px solid $secondaryColor;
   border-bottom: 0.5px solid $secondaryColor;
   @include media (sm) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  @include media (lg) {
+   padding-left: 30px;
+   }
  }
  &__data {
   @include text (18px, 400, 1.4, $textColor);
   display: block;
   padding: 20px 0;
-  border-top: 0.5px solid $secondaryColor;
-  border-bottom: 0.5px solid $secondaryColor;
   text-align: center;
+  max-width: 475px;
   position: relative;
   @include media (sm) {
   text-align: left;
   }
+  @include media (lg) {
+   padding-left: 30px;
+   }
   &::after {
-   @include pseudo;
    @include background (url("../images/icons/calendar.svg"));
    width: 35px;
    height: 35px;
+   display: none;
    @include media (sm) {
+    @include pseudo;
     left: 40%;
     top: 25%;
    } 
-   // @include media (md) {
-   //  left: 30%;
-   // } 
+   @include media (lg) {
+    left: 50%;
+    }
   }
-  
  }
  &__item {
   @include text (18px, 400, 1.4, $textColor);
@@ -68,5 +85,8 @@
   @include media (sm) {
    margin-bottom: 0;
   }
+  @include media (lg) {
+   margin-right: 30px;
+   }
  }
 }

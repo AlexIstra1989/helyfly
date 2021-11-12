@@ -8,8 +8,11 @@
   @extend %container;
  }
  &__inner {
-  @include media (md) {
+  @include media (sm) {
    border-bottom: 0.5px solid $secondaryColor;
+  }
+  @include media (md) {
+   border-bottom: none;
   }
   @include media (lg) {
    display: flex;
@@ -19,7 +22,8 @@
  }
  &__profile {
   text-align: center;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
+  max-width: 320px;
   position: relative;
   @include media (lg) {
    margin-bottom: 0;
@@ -31,15 +35,6 @@
    height: 27px;
    top: 0;
    right: 0;
-   @include media (sm) {
-    right: 90px;
-   }
-   @include media (md) {
-    right: 170px;
-   }
-   @include media (lg) {
-    right: 0;
-   }
   }
   @include media (lg) {
    padding-top: 30px;
