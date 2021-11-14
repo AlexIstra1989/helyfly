@@ -1,0 +1,18 @@
+.map {
+ background-color: $primaryColor;
+ position:relative;
+ height: 423px;
+ margin-top: 45px;
+ iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+ }
+ &__inner {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  border: 1px solid $secondaryColor;
+ }
+}

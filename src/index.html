@@ -7,7 +7,8 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link href="https: //fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
   rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
  <link rel="stylesheet" href="assets/css/style.min.css">
  <title>HELYFLY</title>
 </head>
@@ -191,7 +192,7 @@
     <h2 class="price__title">
      Доступная съемка в ближайщее время
     </h2>
-    
+
     <div class="price__inner">
      <time class="price__data" datatime="2021-09-14">Пятница, 14 сентября</time>
 
@@ -244,42 +245,59 @@
    </div>
   </section>
 
-  <div class="map">
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.8290361676131!2d37.59364822654977!3d55.741162775397406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b552fefa360d39%3A0x287d278800cbf62e!2z0J3QvtCy0L7QvNC-0YHQutC-0LLRgdC60LjQuSDQkNC00LwuINC-0LrRgNGD0LMsINCc0L7RgdC60LLQsCwgMTE5Mjk3!5e0!3m2!1sru!2sru!4v1636671779032!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </div>
-
-  <section class="slider">
-   <div class="container">
-    <div class="slider__inner">
-     <div class="slider__box">
-      <span>1</span>
-      <h4 class="slider__item">
+  <section class="map">
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.8290361676131!2d37.59364822654977!3d55.741162775397406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b552fefa360d39%3A0x287d278800cbf62e!2z0J3QvtCy0L7QvNC-0YHQutC-0LLRgdC60LjQuSDQkNC00LwuINC-0LrRgNGD0LMsINCc0L7RgdC60LLQsCwgMTE5Mjk3!5e0!3m2!1sru!2sru!4v1636671779032!5m2!1sru!2sru"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+   </iframe>
+   <div class="map__inner">
+    <div class="slick">
+     <div class="slick__item">
+      <span class="slick__item-num">1</span>
+      <h4 class="slick__info">
        Где встречаемся?
       </h4>
+      <span>Москва</span>
      </div>
-     <div class="slider__box">
-      <span>1</span>
-      <h4 class="slider__item">
-       Где встречаемся?
+     <div class="slick__item">
+      <span class="slick__item-num">2</span>
+      <h4 class="slick__info">
+       Время съемки
       </h4>
+      <span>3 часа</span>
      </div>
-     <div class="slider__box">
-      <span>1</span>
-      <h4 class="slider__item">
-       Где встречаемся?
+     <div class="slick__item">
+      <span class="slick__item-num">3</span>
+      <h4 class="slick__info">
+       Мест осталось:
       </h4>
+      <span>2 места</span>
      </div>
     </div>
-   </div>
-  </section>
+
+   
+     <div class="author__profile">
+      <img class="author__image" src="assets/images/author-avatar.jpg" alt="аватарка автора">
+      <h4 class="author__name">
+       Марина Иванова
+      </h4>
+      <h5 class="author__activity">
+       Фотограф
+      </h5>
+      <a class="author__link" href="#">
+       Показать больше информации о фотографе
+      </a>
+     </div>
+    
+    
+  </section> 
 
 
  </main>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
- <script src="assets/js/slick.min.js"></script>
+ <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
  <script src="assets/js/script.js"></script>
 </body>
 
-</html>
+</html> 

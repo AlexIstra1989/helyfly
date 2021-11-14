@@ -1,0 +1,22 @@
+.slick {
+ &__item {
+  
+ }
+ &__item-num {
+  padding: 15px 25px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: $accentColor; 
+  color: $primaryColor;
+ }
+ &__info {
+  @include text (16px, 500, 1.4, $textColor);
+  margin-bottom: 10px;
+ }
+
+}

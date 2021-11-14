@@ -3,21 +3,3 @@ body {
  font-family: "Montserrat", sans-serif;
  // min-width: 320px;
 }
-
-.map{
- overflow:hidden;
- padding-bottom:56.25%;
- position:relative;
- height: 423px;
- margin: 45px 0 50px;
-  // @include media (sm) {
-  //  height: 510px;
-  // }
- iframe {
- left:0;
- top:0;
- height:100%;
- width:100%;
- position:absolute;
-}
-}
