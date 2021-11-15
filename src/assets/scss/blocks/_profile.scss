@@ -1,0 +1,32 @@
+.profile {
+ background-color: $primaryColor;
+ padding-bottom: 21px;
+ .container {
+  @extend %container;
+ }
+ &__inner {
+  display: flex;
+  justify-content: center;
+ }
+ &__image {
+  width: 67px;
+  height: 67px;
+  margin-right: 11px;
+ }
+ &__box {
+  max-width: 155px;
+  width: 100%;
+  text-align: left;
+ }
+ &__name {
+  @include text (16px, 600, 1.2, $textColor);
+  margin-bottom: 5px;
+ }
+ &__activity {
+  @include text (14px, 400, 1.5, $textColor);
+  margin-bottom: 7px;
+ }
+ &__link {
+  @include text (14px, 400, 1.5, $linkColor);
+ }
+}

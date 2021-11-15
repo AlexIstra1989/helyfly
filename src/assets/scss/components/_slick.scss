@@ -1,6 +1,7 @@
 .slick {
+ background-color: $primaryColor;
  &__item {
-  
+  margin-top: 52px;
  }
  &__item-num {
   padding: 15px 25px;
@@ -15,8 +16,48 @@
   color: $primaryColor;
  }
  &__info {
-  @include text (16px, 500, 1.4, $textColor);
+  @include text (16px, 600, 1.4, $textColor);
   margin-bottom: 10px;
  }
+ &__answer {
+  @include text (14px, 400, 1.4, $textColor);
+ }
 
+ .slick-dots .slick-active button {
+  background-color: $accentColor;
+ }
+
+ .slick-dots {
+  display: flex;
+  justify-content: center;
+   li:not(:last-child) {
+    margin-right: 11px;
+   }
+ }
+
+ .slick-dots button {
+  width: 10px;
+  height: 10px;
+  border: 0.5px solid $textColorlight;
+  border-radius: 50%;
+  background-color: $primaryColor;
+  font-size: 0;
+  margin-bottom: 40px;
+ }
+
+ .slick-prev,
+ .slick-next, 
+ .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+ }
+
+ .slick-prev {
+  left: 10px;
+ }
+ 
+ .slick-next {
+  right: 0;
+ } 
 }

@@ -9,10 +9,18 @@
   height:100%;
   width:100%;
  }
+ .container {
+  @extend %container;
+ }
  &__inner {
   position: relative;
-  top: 50px;
+  margin-top: 50px;
   text-align: center;
   border: 1px solid $secondaryColor;
+  // @include media (sm) {
+  //  max-width: 400px;
+  //  width: 100%;
+  //  margin: 50px auto;
+  // }
  }
 }
