@@ -7,8 +7,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link href="https: //fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
   rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+ <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
  <link rel="stylesheet" href="assets/css/style.min.css">
  <title>HELYFLY</title>
 </head>
@@ -18,7 +17,7 @@
   <div class="container">
    <div class="header__wrapper">
     <div class="header__inner">
-     <a class="header__logo" href="#">
+     <a class="logo" href="#">
       <img class="header__logo-images" src="assets/images/logo.svg" alt="логотип">
      </a>
      <a class="header__city-phone" href="tel:88001231212">Москва</a>
@@ -246,53 +245,141 @@
   </section>
 
   <section class="map">
-   <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.8290361676131!2d37.59364822654977!3d55.741162775397406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b552fefa360d39%3A0x287d278800cbf62e!2z0J3QvtCy0L7QvNC-0YHQutC-0LLRgdC60LjQuSDQkNC00LwuINC-0LrRgNGD0LMsINCc0L7RgdC60LLQsCwgMTE5Mjk3!5e0!3m2!1sru!2sru!4v1636671779032!5m2!1sru!2sru"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-   </iframe>
-   <div class="container">
-    <div class="map__inner">
+   <div class="map__wrapper">
+    <iframe
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.8290361676131!2d37.59364822654977!3d55.741162775397406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b552fefa360d39%3A0x287d278800cbf62e!2z0J3QvtCy0L7QvNC-0YHQutC-0LLRgdC60LjQuSDQkNC00LwuINC-0LrRgNGD0LMsINCc0L7RgdC60LLQsCwgMTE5Mjk3!5e0!3m2!1sru!2sru!4v1636671779032!5m2!1sru!2sru"
+     width="600" height="510" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+    <div class="container">
      <div class="slick">
-      <div class="slick__item">
-       <span class="slick__item-num">1</span>
-       <h4 class="slick__info">
-        Где встречаемся?
-       </h4>
-       <span class="slick__answer">Москва</span>
-      </div>
-      <div class="slick__item">
-       <span class="slick__item-num">2</span>
-       <h4 class="slick__info">
-        Время съемки
-       </h4>
-       <span class="slick__answer">3 часа</span>
-      </div>
-      <div class="slick__item">
-       <span class="slick__item-num">3</span>
-       <h4 class="slick__info">
-        Мест осталось:
-       </h4>
-       <span class="slick__answer">2 места</span>
-      </div>
-     </div>
-     <div class="profile">
-      <div class="profile__inner">
-       <img class="profile__image" src="assets/images/author-avatar.jpg" alt="аватарка автора">
-       <div class="profile__box">
-        <h4 class="profile__name">
-         Марина Иванова
+      <div class="slick__box">
+       <div class="slick__item">
+        <span class="slick__item-num">1</span>
+        <h4 class="slick__info">
+         Где встречаемся?
         </h4>
-        <h5 class="profile__activity">
-         Фотограф
-        </h5>
-        <a class="profile__link" href="#">
-         Показать больше информации о фотографе
-        </a>
+        <span class="slick__answer">Москва</span>
+       </div>
+       <div class="slick__item">
+        <span class="slick__item-num">2</span>
+        <h4 class="slick__info">
+         Время съемки
+        </h4>
+        <span class="slick__answer">3 часа</span>
+       </div>
+       <div class="slick__item">
+        <span class="slick__item-num">3</span>
+        <h4 class="slick__info">
+         Мест осталось:
+        </h4>
+        <span class="slick__answer">2 места</span>
+       </div>
+      </div>
+      <div class="profile">
+       <div class="profile__inner">
+        <img class="profile__image" src="assets/images/author-avatar.jpg" alt="аватарка автора">
+        <div class="profile__box">
+         <h4 class="profile__name">
+          Марина Иванова
+         </h4>
+         <h5 class="profile__activity">
+          Фотограф
+         </h5>
+         <a class="profile__link" href="#">
+          Показать больше информации о фотографе
+         </a>
+        </div>
        </div>
       </div>
      </div>
     </div>
   </section>
+
+  <section class="testimonials">
+   <div class="container">
+    <h2 class="testimonials__title">
+     Отзывы
+    </h2>
+
+    <div class="testimonials__item">
+     <div class="testimonials__client-box">
+      <img class="testimonials__image" src="assets/images/client-photo-1.jpg" alt="фотография клиента">
+      <div class="testimonials__client-info">
+       <h4 class="testimonials__name">
+        Валерия Антонова
+       </h4>
+       <h5 class="testimonials__activity">
+        Арт-директор
+       </h5>
+      </div>
+     </div>
+     <span>
+      Супер! Я бы заказала съемку снова!
+     </span>
+     <p class="testimonials__text">
+      Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно.
+      Фотки получились великолепные, отдельное спасибо фотографу!
+     </p>
+     <time class="testimonials__data" datatime="2019-04-27">27 Апреля, 2019г.</time>
+    </div>
+
+    <div class="testimonials__item">
+     <div class="testimonials__client-box">
+      <img class="testimonials__image" src="assets/images/client-photo-2.jpg" alt="фотография клиента">
+      <div class="testimonials__client-info">
+       <h4 class="testimonials__name">
+        Виталий Петров
+       </h4>
+       <h5 class="testimonials__activity">
+        Фотограф
+       </h5>
+      </div>
+     </div>
+     <span>
+      Супер! Я бы заказал съемку снова!
+     </span>
+     <p class="testimonials__text">
+      Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам
+      вертолет, взлет, полёт, приземление.
+      Организация полёта отличная. Спасибо!
+     </p>
+     <time class="testimonials__data" datatime="2019-04-19">19 Апреля, 2019г.</time>
+    </div>
+
+    <div class="testimonials__item">
+     <div class="testimonials__client-box">
+      <img class="testimonials__image" src="assets/images/client-photo-3.jpg" alt="фотография клиента">
+      <div class="testimonials__client-info">
+       <h4 class="testimonials__name">
+        Джим Керри
+       </h4>
+      </div>
+     </div>
+     <span>
+      Супер! Я бы заказал съемку снова!
+     </span>
+     <p class="testimonials__text">
+      Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы
+      с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по
+      сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче,
+      Презентстар – проверено. Оценка: пять!
+     </p>
+     <time class="testimonials__data" datatime="2019-04-11">11 Апреля, 2019г.</time>
+    </div>
+   </div>
+   <a class="testimonials__link" href="#">
+    Показать Все (134)
+   </a>
+   </div>
+  </section>
+
+  <footer class="footer">
+   <div class="container">
+    <a class="logo" href="#">
+     <img class="header__logo-images" src="assets/images/logo.svg" alt="логотип">
+    </a>
+   </div>
+  </footer>
 
 
  </main>

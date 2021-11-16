@@ -1,8 +1,12 @@
 .map {
+ &__wrapper {
  background-color: $primaryColor;
- position:relative;
  height: 423px;
- margin-top: 45px;
+ margin: 45px 0 470px;
+ @include media (sm) {
+  height: 510px;
+ }
+ }
  iframe {
   left:0;
   top:0;
@@ -11,16 +15,5 @@
  }
  .container {
   @extend %container;
- }
- &__inner {
-  position: relative;
-  margin-top: 50px;
-  text-align: center;
-  border: 1px solid $secondaryColor;
-  // @include media (sm) {
-  //  max-width: 400px;
-  //  width: 100%;
-  //  margin: 50px auto;
-  // }
  }
 }

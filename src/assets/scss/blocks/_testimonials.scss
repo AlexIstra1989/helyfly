@@ -1,0 +1,65 @@
+.testimonials {
+ background-color: $primaryColor;
+ padding-bottom: 80px;
+ .container {
+  @extend %container;
+ }
+ &__title {
+  @include text (26px, 400, 1.5, $textColor);
+  margin-bottom: 20px;
+  text-align: center;
+ }
+ &__item {
+  padding: 30px 0;
+  border-bottom: 0.5px solid $secondaryColor;
+  span {
+   @include text (14px, 400,  1.5, $textColorlight);
+   display: block;
+   margin-bottom: 14px;
+   padding-left: 21px;
+   position: relative;
+   &::before {
+    @include pseudo;
+    @include background (url("../images/icons/testimonials-ok.svg"));
+    width: 15px;
+    height: 11px;
+    left: 0;
+    top: 7px;
+   }
+  }
+ }
+ &__client-box  {
+  display: flex;
+  margin-bottom: 24px;
+ }
+ &__client-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+ }
+ &__name {
+  @include text (16px, 600, 1.2, $textColor);
+  margin-bottom: 6px;
+ }
+ &__activity {
+  @include text (14px, 400,  1.5, $textColor);
+ }
+ &__text {
+  @include text (14px, 400,  1.5, $textColor);
+  margin-bottom: 40px;
+  max-width: 290px;
+  width: 100%; 
+  @include media (sm) {
+   max-width: 510px;
+  }
+ }
+ &__data {
+  @include text (14px, 400,  1.5, $textColorlight);
+ }
+ &__link {
+  @include text (17px, 500,  1.4, $linkColor);
+  display: block;
+  padding-top: 40px;
+  text-align: center;
+ }
+}

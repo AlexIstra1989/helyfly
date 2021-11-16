@@ -1,5 +1,18 @@
 .slick {
  background-color: $primaryColor;
+ margin-top: 50px;
+ text-align: center;
+ border: 1px solid $secondaryColor;
+  @include media (sm) {
+   max-width: 400px;
+   width: 100%;
+   margin: 50px auto;
+  }
+  // @include media (lg) {
+  //  position: absolute;
+  //  top: 0;
+  //  margin: 0 auto;
+  // }
  &__item {
   margin-top: 52px;
  }
@@ -55,9 +68,15 @@
 
  .slick-prev {
   left: 10px;
+   @include media (sm) {
+    left: 70px;
+   }
  }
  
  .slick-next {
   right: 0;
+  @include media (sm) {
+   right: 60px;
+  }
  } 
 }
